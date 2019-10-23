@@ -6,16 +6,18 @@ pfile = Project(chdir=False).parsed_pipfile
 requirements = (convert_deps_to_pip(pfile["packages"], r=False),)
 test_requirements = convert_deps_to_pip(pfile["dev-packages"], r=False)
 
+version = "0.0.1"
+
 setup(
     name="httpie-adobeio",
     description="AdobeIO plugin for HTTPie.",
     long_description=open("README.rst").read().strip(),
-    version="0.0.1",
+    version=f"{version}",
     author="Chris Pilsworth",
     author_email="cpilsworth@gmail.com",
     license="Apache License 2.0",
     url="https://github.com/cpilsworth/httpie-cpilsworth",
-    download_url="https://github.com/cpilsworth/httpie-cpilsworth",
+    download_url=f"https://github.com/cpilsworth/httpie-adobeio/releases/download/{version}/httpie-adobeio-{version}.tar.gz",
     py_modules=["httpie_adobeio"],
     zip_safe=False,
     entry_points={
