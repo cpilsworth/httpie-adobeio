@@ -16,7 +16,11 @@ flake8 = "*"
 pipenv = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.6"
 
 [pipenv]
 allow_prereleases = true
+
+[scripts]
+format = "black --target-version=py36 . "
+lint = "flake8 *.py"
