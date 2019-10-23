@@ -1,9 +1,7 @@
 httpie-adobeio
 ==============
 
-AdobeIO plugin for `HTTPie <https://httpie.org/>`_.
-
-It currently provides support for Adobe IO service authentication
+AdobeIO plugin for `HTTPie <https://httpie.org/>`_ that provides support for `Adobe IO service account authentication <https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md/>`_.
 
 
 Installation
