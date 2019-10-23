@@ -19,7 +19,8 @@ Configuration
 -------------
 
 The plugin will look for a configuration file in the `~/.httpie_adobeio.ini` location:
-.. code-block::
+.. code-block:: 
+
     [DEFAULT]
     ims_base=https://ims-na1.adobelogin.com
 

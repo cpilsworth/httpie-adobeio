@@ -12,6 +12,7 @@ setup(
     name="httpie-adobeio",
     description="AdobeIO plugin for HTTPie.",
     long_description=open("README.rst").read().strip(),
+    long_description_content_type="text/x-rst",
     version=f"{version}",
     author="Chris Pilsworth",
     author_email="cpilsworth@gmail.com",
