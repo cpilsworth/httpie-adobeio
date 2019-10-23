@@ -15,14 +15,14 @@ class AdobeIOToken:
     def __init__(self, profile):
         file = self.CONFIG_FILE
         config = ConfigParser()
-        
+
         if not path.exists(file) or not path.isfile(file):
             raise Exception(f"Could not file configuration file at {file}")
-        
+
         config.read(file)
         if profile not in config:
             raise Exception(f"Could not file profile {profile} in {file}")
-        
+
         self.private_key = config[profile]["private_key"]
         self.public_cert = config[profile]["public_cert"]
         self.ims_base = config[profile]["ims_base"]
