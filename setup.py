@@ -3,8 +3,8 @@ from pipenv.project import Project
 from pipenv.utils import convert_deps_to_pip
 
 pfile = Project(chdir=False).parsed_pipfile
-requirements = convert_deps_to_pip(pfile['packages'], r=False),
-test_requirements = convert_deps_to_pip(pfile['dev-packages'], r=False)
+requirements = (convert_deps_to_pip(pfile["packages"], r=False),)
+test_requirements = convert_deps_to_pip(pfile["dev-packages"], r=False)
 
 setup(
     name="httpie-adobeio",
@@ -21,7 +21,7 @@ setup(
     entry_points={
         "httpie.plugins.auth.v1": ["httpie_adobeio = httpie_adobeio:AdobeIOAuthPlugin"]
     },
-    install_requires= requirements,
+    install_requires=requirements,
     tests_require=test_requirements,
     classifiers=[
         "Development Status :: 5 - Production/Stable",
@@ -31,5 +31,5 @@ setup(
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Utilities",
     ],
-    python_requires='>=3.6',
+    python_requires=">=3.6",
 )
