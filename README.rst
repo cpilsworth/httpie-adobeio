@@ -41,7 +41,7 @@ The plugin will look for a configuration file in the `~/.httpie_adobeio.ini` loc
     api_key=ABC123ABC123ABC123ABC123ABC123
     scopes=ent_cloudmgr_sdk
 
-Shared settings can be saved in the `DEFAULT` section.  It's possible to have multiple profiles and reference them from username part of the `--auth` parameter
+Shared settings can be saved in the ``DEFAULT`` section.  It's possible to have multiple profiles and reference them from username part of the ``--auth`` parameter
 
 
 
