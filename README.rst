@@ -50,7 +50,7 @@ Usage
 
 .. code-block:: bash
 
-    $ http --auth-type=adobeio --auth='client-key:client-secret' https://cloudmanager.adobe.io/api/programs
+    $ http --auth-type=adobeio --auth='profile:client-secret' https://cloudmanager.adobe.io/api/programs
 
 
 You can also use `HTTPie sessions <https://httpie.org/doc#sessions>`_:
