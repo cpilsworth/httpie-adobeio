@@ -29,7 +29,7 @@ setup(
         "Development Status :: 5 - Production/Stable",
         "Programming Language :: Python",
         "Environment :: Plugins",
-        "License :: OSI Approved :: Apache 2 License",
+        "License :: OSI Approved :: Apache Software License",
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Utilities",
     ],
