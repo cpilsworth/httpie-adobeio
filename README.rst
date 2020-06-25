@@ -36,7 +36,7 @@ The plugin will look for a configuration file in the `~/.httpie_adobeio.ini` loc
 
     [profile-1]
     ims_org=ABC123@AdobeOrg
-    account_id=ABC123@techacct.adobe.com
+    account_id=ABC123@techacctadobe.adobe--.com
     api_key=ABC123ABC123ABC123ABC123ABC123
     scopes=ent_cloudmgr_sdk
            ent_campaign_sdk
